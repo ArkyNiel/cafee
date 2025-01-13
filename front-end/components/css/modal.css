@@ -1,0 +1,70 @@
+.modal-dialog {
+  max-width: 800px;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1050;
+}
+
+.modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #28292b;
+}
+
+.modal-header .modal-title {
+  color: #00ff00 !important;
+}
+
+.modal-content {
+  display: block;
+}
+
+.modal-body {
+  position: relative;
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.modal-body img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.movie-text {
+  flex-grow: 1;
+  max-height: 220px;
+  overflow-y: auto;
+  font-size: 16px;
+  color: #333;
+}
+
+.movie-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+.movie-text::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.movie-text::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 10px;
+}
+
+.movie-text::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
+/* Play Button Styling */
+button.btn-success {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
