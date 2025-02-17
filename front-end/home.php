@@ -102,7 +102,7 @@ $endPage = min($totalPages, $startPage + 9);
             <nav>
                 <ul class="pagination pagination-lg">
                     <li class="page-item <?php echo ($page <= 1) ? 'disabled' : ''; ?>">
-                        <a class="page-link text-primary" href="?category=<?php echo $category; ?>&search=<?php echo $searchQuery; ?>&page=<?php echo max(1, $page - 1); ?>">
+                        <a class="page-link text-primary" href="?category=<?    php echo $category; ?>&search=<?php echo $searchQuery; ?>&page=<?php echo max(1, $page - 1); ?>">
                             <span aria-hidden="true">&laquo; Prev</span>
                         </a>
                     </li>
