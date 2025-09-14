@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Movies</a>
+    <a class="navbar-brand" href="#">Cafe</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -21,28 +21,13 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?category=action">Action</a>
+          <a class="nav-link" href="#menu">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?category=animation">Anime</a>
+          <a class="nav-link" href="#about">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?category=tv-series">TV Series</a>
-        </li>
-        <!-- Dropdown for Genres -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Genres
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="?category=adventure">Adventure</a></li>
-            <li><a class="dropdown-item" href="?category=romance">Romance</a></li>
-            <li><a class="dropdown-item" href="?category=comedy">Comedy</a></li>
-            <li><a class="dropdown-item" href="?category=crime">Crime</a></li>
-            <li><a class="dropdown-item" href="?category=horror">Horror</a></li>
-            <li><a class="dropdown-item" href="?category=fantasy">Fantasy</a></li>
-            <li><a class="dropdown-item" href="?category=drama">Drama</a></li>
-          </ul>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -53,7 +38,6 @@
         name="search"
         placeholder="Search"
         aria-label="Search"
-        value="<?php echo isset($_GET['search']) ? htmlspecialchars($_GET['search']) : ''; ?>"
       />
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>

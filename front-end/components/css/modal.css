@@ -11,6 +11,8 @@
   padding: 20px;
   border-bottom: 1px solid #dee2e6;
   background-color: #28292b;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
 
 .modal-header .modal-title {
@@ -19,6 +21,7 @@
 
 .modal-content {
   display: block;
+  border-radius: 0;
 }
 
 .modal-body {
@@ -34,6 +37,7 @@
   height: 280px;
   object-fit: cover;
   flex-shrink: 0;
+  border-radius: 0;
 }
 
 .movie-text {

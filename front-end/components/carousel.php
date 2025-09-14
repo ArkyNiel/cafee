@@ -1,26 +1,44 @@
+<style>
+
+</style>
+
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <?php foreach (array_slice($movies, 0, 5) as $index => $movie): ?>
-      <?php
-        // Ensure necessary data exists before accessing it
-        $backdropPath = isset($movie['backdrop_path']) ? htmlspecialchars($movie['backdrop_path']) : null;
-        $title = isset($movie['title']) ? htmlspecialchars($movie['title']) : (isset($movie['name']) ? htmlspecialchars($movie['name']) : 'Title not available');
-        $overview = isset($movie['overview']) ? htmlspecialchars(substr($movie['overview'], 0, 100)) : 'No description available';
-      ?>
-      <div class="carousel-item <?php echo $index === 0 ? 'active' : ''; ?>">
-        <img 
-          srcset="<?php echo $backdropPath ? "https://image.tmdb.org/t/p/w780{$backdropPath} 780w, 
-                https://image.tmdb.org/t/p/w1280{$backdropPath} 1280w, 
-                https://image.tmdb.org/t/p/original{$backdropPath} 1920w" : './img/default.jpg'; ?>"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 75vw"
-          class="d-block w-100"
-          alt="<?php echo $title; ?>">
-        <div class="carousel-caption d-none d-md-block">
-          <h5><?php echo $title; ?></h5>
-          <p><?php echo $overview; ?>...</p>
-        </div>
+    <div class="carousel-item active">
+      <img src="../src/carousel/carousel1.jpg" class="d-block w-100" alt="Fresh Coffee">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Fresh Brewed Coffee</h5>
+        <p>Start your day with our aromatic, freshly brewed coffee.</p>
       </div>
-    <?php endforeach; ?>
+    </div>
+    <div class="carousel-item">
+      <img src="../src/carousel/carousel2.jpg" class="d-block w-100" alt="Delicious Pastries">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Delicious Pastries</h5>
+        <p>Indulge in our selection of freshly baked croissants and muffins.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../src/carousel/carousel3.jpg" class="d-block w-100" alt="Gourmet Sandwiches">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Gourmet Sandwiches</h5>
+        <p>Enjoy our handcrafted sandwiches made with fresh ingredients.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../src/carousel/carousel4.jpg" class="d-block w-100" alt="Herbal Teas">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Herbal Teas</h5>
+        <p>Relax with a cup of our soothing herbal teas.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../src/carousel/carousel5.jpg" class="d-block w-100" alt="Decadent Cakes">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Decadent Cakes</h5>
+        <p>Treat yourself to our rich and creamy cakes.</p>
+      </div>
+    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
